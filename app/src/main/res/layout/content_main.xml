@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ff1ba1ee"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.anon.theweatherapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:textColor="#fff"
+        android:text="Spokane,US"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--
+
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_below="@+id/cityText"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+     -->
+
+    <TextView
+        android:id="@+id/tempText"
+        android:text="12 Deg"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/cityText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/windText"
+        android:text="বাতাস"
+        android:textColor="#fff"
+        android:layout_below="@+id/tempText"
+        android:layout_marginTop="45dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:text="মেঘ"
+        android:textColor="#fff"
+        android:layout_below="@+id/windText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pressureText"
+        android:text="চাপ"
+        android:textColor="#fff"
+        android:layout_below="@+id/cloudText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/humidText"
+        android:text="শৈত্য"
+        android:textColor="#fff"
+        android:layout_below="@+id/pressureText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/riseText"
+        android:text="সূর্যোদয়"
+        android:textColor="#fff"
+        android:layout_below="@+id/humidText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setText"
+        android:text="সূর্যাস্ত"
+        android:textColor="#fff"
+        android:layout_below="@+id/riseText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/updateText"
+        android:text="শেষ পরিবর্তন"
+        android:textColor="#fff"
+        android:layout_below="@+id/setText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
